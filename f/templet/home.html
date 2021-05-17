@@ -1,0 +1,43 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        h3{font-size: 65px;
+            color:#F3FF00;
+        font-family:inherit;}
+        h6{padding-top: 0px;}
+    body {background-color: #ff1111;
+        background-image: url('{% static "im2.jpg" %}')}
+    input[type=text] {
+  background-color: #FF7B99;
+        border-radius: 20px;
+        border-color: black;
+        height:30px;
+        width:250px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: cursive;
+        font-size: 30px;
+        
+  color: white;
+    
+}    
+    </style>
+    </head> 
+<body>
+<center>
+    <h3>F L A M E S</h3>
+<form action="/" method="POST" enctype="multipart/form-data">
+{% csrf_token %} >
+  <label for="fname": style="font-family:cursive; font-size: 50px; color:#2EFF00",>Your name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+ <img src="{% static 'im.gif'%}" width="398" height="250"><br>
+  <label for="lname": style="font-family:cursive;font-size: 50px;color:#2EFF00",></lab>Partner name:</label>
+  <input type="text" id="lname" name="lname"><br>
+    <input type="submit" name='submit'/>
+</form>
+    
+</center>
+</body>
+</html>
